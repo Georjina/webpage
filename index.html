@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AMACD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="top-bar">
+    <div class="top-logo fl">
+        <h1><a href="index.html" title="AMACD">AMACD</a></h1>
+        AMACD
+    </div>
+    <div class="top-nav fl">
+        <button class="top-button">文件(F)</button>
+        <button class="top-button">视图(V)</button>
+        <button class="top-button">操作(T)</button>
+        <button class="top-button">网格(M)</button>
+    </div>
+</div>
+<div class="center-bar">
+    <div class="center-group">
+        <button class="opt-btn">
+            <img src="img/SetCenter.png" alt="SetCenter">
+        </button>
+        <button class="opt-btn">
+            <img src="img/WorkPlane.png" alt="WorkPlane">
+        </button>
+        <button class="opt-btn">
+            <img src="img/Move.png" alt="Move">
+        </button>
+        <button class="opt-btn">
+            <img src="img/Rotation.png" alt="Rotation">
+        </button>
+        <button class="opt-btn">
+            <img src="img/Scale.png" alt="Scale">
+        </button>
+        <button class="opt-btn">
+            <img src="img/copyFace.png" alt="copyFace">
+        </button>
+        <button class="opt-btn">
+            <img src="img/copy.png" alt="copy">
+        </button>
+        <button class="opt-btn">
+            <img src="img/DeleteObject.png" alt="DeleteObject">
+        </button>
+        <button class="opt-btn">
+            <img src="img/Combine.png" alt="Combine">
+        </button>
+        <button class="opt-btn">
+            <img src="img/Mirror.png" alt="Mirror">
+        </button>
+        <button class="opt-btn">
+            <img src="img/SubdiveCC.png" alt="SubdiveCC">
+        </button>
+        <button class="opt-btn">
+            <img src="img/SubdiveLoop.png" alt="SubdiveLoop">
+        </button>
+        <button class="opt-btn">
+            <img src="img/DeleteFace.png" alt="DeleteFace">
+        </button>
+        <button class="opt-btn">
+            <img src="img/EmbedFace.png" alt="EmbedFace">
+        </button>
+        <button class="opt-btn">
+            <img src="img/Separate.png" alt="Separate">
+        </button>
+        <button class="opt-btn">
+            <img src="img/SplitLoop.png" alt="SplitLoop">
+        </button>
+        <button class="opt-btn">
+            <img src="img/SplitFace.png" alt="SplitFace">
+        </button>
+        <button class="opt-btn">
+            <img src="img/SplitEdgeOnly.png" alt="SplitEdgeOnly">
+        </button>
+        <button class="opt-btn">
+            <img src="img/SplitEdge.png" alt="SplitEdge">
+        </button>
+        <button class="opt-btn">
+            <img src="img/CollapseEdge.png" alt="CollapseEdge">
+        </button>
+        <button class="opt-btn">
+            <img src="img/SwapEdge.png" alt="SwapEdge">
+        </button>
+        <button class="opt-btn">
+            <img src="img/CombineFace.png" alt="CombineFace">
+        </button>
+        <button class="opt-btn">
+            <img src="img/BridgeEdge.png" alt="BridgeEdge">
+        </button>
+        <button class="opt-btn">
+            <img src="img/ExtrudeEdgeVertical.png" alt="ExtrudeEdgeVertical">
+        </button>
+        <button class="opt-btn">
+            <img src="img/ExtrudeEdgeHorizontal.png" alt="ExtrudeEdgeHorizontal">
+        </button>
+        <button class="opt-btn">
+            <img src="img/ExtrudeFace.png" alt="ExtrudeFace">
+        </button>
+        <button class="opt-btn">
+            <img src="img/MeshTriangulation.png" alt="MeshTriangulation">
+        </button>
+        <button class="opt-btn">
+            <img src="img/MeshQuadrilateralization.png" alt="MeshQuadrilateralization">
+        </button>
+        <button class="opt-btn">
+            <img src="img/ReverseNormal.png" alt="ReverseNormal">
+        </button>
+    </div>
+</div>
+<div class="main-bar">
+    <div class="left-contain fl"></div>
+    <div class="right-contain fr">
+        <div class="contain-title">工作区属性</div>
+        <div class="contain-nav">
+            <button class="contain-button">
+                <img src="img/create_.png"/>
+            </button>
+            <button class="contain-button">
+                <img src="img/select_.png"/>
+            </button>
+        </div>
+        <div class="contain-page" id="create-page">
+            <div id="create-fixed">
+                <div id="create-model">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                </div>
+                <select id="create-select">
+                    <option>标准基本体</option>
+                    <option>扩展基本体</option>
+                    <option>复合对象</option>
+                    <option>粒子系统</option>
+                    <option>面片栅格</option>
+                    <option>实体对象</option>
+                    <option>门</option>
+                    <option>NURBS曲面</option>
+                    <option>窗</option>
+                    <option>AEC扩展</option>
+                    <option>Point Cloud Objects</option>
+                    <option>动力学对象</option>
+                    <option>楼梯</option>
+                    <option>流体</option>
+                    <option>Arnold</option>
+                    <option>Alembic</option>
+                    <option>Cfd</option>
+                </select>
+            </div>
+            <div class="page-bar">
+                <div class="pageBar-top">
+                    <button>
+                        <img src="img/DropdownTriangle.png" alt="DropdownTriangle">
+                    </button>
+                    对象类型
+                </div>
+                <div class="pageBar-main" id="objType-main">
+                    <div id="checkGrid"><input type="checkbox"/>自动栅格</div>
+                    <div id="buttonGrid">
+                        <button>长方体</button>
+                        <button>圆锥体</button>
+                        <button>球体</button>
+                        <button>几何球体</button>
+                        <button>圆柱体</button>
+                        <button>管状体</button>
+                        <button>圆环</button>
+                        <button>四棱锥</button>
+                        <button>茶壶</button>
+                        <button>平面</button>
+                        <button>加强型文本</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="page-bar">
+                <div class="pageBar-top">
+                    <button>
+                        <img src="img/DropdownTriangle.png" alt="DropdownTriangle">
+                    </button>
+                    名称和颜色
+                </div>
+                <div class="pageBar-main" id="nameColor">
+                    <input type="text" placeholder="创建对象的名称">
+                    <button></button>
+                </div>
+            </div>
+            <div class="page-bar">
+                <div class="pageBar-top">
+                    <button>
+                        <img src="img/DropdownTriangle.png" alt="DropdownTriangle">
+                    </button>
+                    参数
+                </div>
+                <div class="pageBar-main" id="parameter">
+
+                </div>
+            </div>
+            <div class="page-bar">
+                <div class="pageBar-top">
+                    <button>
+                        <img src="img/DropdownTriangle.png" alt="DropdownTriangle">
+                    </button>
+                    键盘输入
+                </div>
+                <div class="pageBar-main" id="keyInput">
+                    <div>
+                        <b>x：</b><input type="number" value="0.00">
+                    </div>
+                    <div>
+                        <b>y：</b><input type="number" value="0.00">
+                    </div>
+                    <div>
+                        <b>z：</b><input type="number" value="0.00">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-bar">
+
+</div>
+</body>
+</html>

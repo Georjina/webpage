@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+button {
+    outline: none;
+    border: 0;
+}
+
+input {
+    outline: none;
+    border: 0;
+    color: #E0E0E0;
+}
+
+select {
+    outline: none;
+}
+
+/*body*/
+body {
+    box-sizing: content-box;
+    height: 100vh;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+}
+
+/*top-bar start*/
+.top-bar {
+    height: 40px;
+    line-height: 40px;
+    background-color: #262626;
+    color: #E0E0E0;
+    min-width: 540px;
+}
+
+.top-logo {
+    height: 40px;
+    width: 128px;
+
+}
+
+.top-logo h1 {
+    display: inline-block;
+    width: 40px;
+    line-height: 50px;
+}
+
+.top-logo a {
+    display: block;
+    height: 40px;
+    background-image: url("../img/icon_128x128.ico");
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+.top-nav{
+    min-width: 393px;
+}
+.top-nav button {
+    background-color: transparent;
+    color: #E0E0E0;
+    border-radius: 2px;
+    margin-left: 20px;
+    padding: 0 15px;
+}
+
+.top-nav button:hover {
+    background-color: #A8A8A8;
+}
+
+/*top-bar end*/
+
+/*center-bar start*/
+.center-bar {
+    background-color: #434343;
+    min-width: 1294px;
+}
+
+.opt-btn {
+    width: 35px;
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+.opt-btn:hover {
+    background-color: rgba(0, 140, 255, 0.8);
+}
+
+/*center-bar end*/
+
+/*.main-bar start*/
+.main-bar {
+    height: calc(100vh - 96px);
+    min-width: 1315px;
+}
+
+.left-contain {
+    width: calc(100vw - 260px);
+    border: 5px solid #262626;
+}
+
+.right-contain {
+    width: 250px;
+}
+
+.contain-title {
+    background-color: #505050;
+    color: #C9C9C9;
+}
+
+.contain-nav {
+    height: 23px;
+    line-height: 23px;
+    background-color: #585858;
+    padding-left: 5px;
+}
+
+.contain-button {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #585858;
+    margin-right: -5px;
+}
+
+.contain-button img {
+    width: 20px;
+}
+
+.contain-button:hover {
+    border: 1px solid greenyellow;
+}
+
+#create-fixed {
+    height: 50px;
+    padding-left: 5px;
+    background-color: #3C3C3C;
+}
+
+#create-model button {
+    width: 20px;
+    height: 20px;
+    background-color: #4B4B4B;
+    color: #F3F9FB;
+}
+
+#create-select {
+    width: 100%;
+    background-color: #5D5D5D;
+    color: #F3F9FB;
+}
+
+/*.main-bar end*/
+
+/*页面块start*/
+.page-bar {
+    background-color: #4B4B4B;
+    border: 5px solid #3C3C3C;
+}
+
+.pageBar-top {
+    height: 20px;
+    color: #F3F9FB;
+}
+
+.pageBar-top button {
+    background-color: #4B4B4B;
+}
+
+.pageBar-top img {
+    width: 16px;
+}
+
+.pageBar-main {
+    font-size: 12px;
+    color: #F3F9FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.pageBar-main input{
+    background-color: #5D5D5D;
+}
+
+/*页面块end*/
+
+/*对象类型页面块start*/
+#checkGrid {
+    font-size: 12px;
+    color: #F3F9FB;
+    display: flex;
+    line-height: 12px;
+    margin-bottom: 5px;
+}
+
+#buttonGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 165px;
+    align-items: center;
+}
+
+#buttonGrid button {
+    width: 75px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: #5D5D5D;
+    color: #F3F9FB;
+}
+
+#buttonGrid button:hover {
+    background-color: #424242;
+}
+
+/*对象类型页面块end*/
+
+/*名称和颜色页面块start*/
+#nameColor {
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+#nameColor button {
+    width: 20px;
+    height: 20px;
+    background-color: #800080;
+    margin-left: 10px;
+}
+
+/*名称和颜色页面块end*/
+/*参数页面块start*/
+#parameter{
+    height: 30px;
+}
+/*参数页面块end*/
+/*键盘输入页面块start*/
+#keyInput input{
+    width: 90px;
+    height: 16px;
+    margin: 5px 5px;
+}
+/*键盘输入页面块end*/
+/*底部栏start*/
+.bottom-bar{
+    width: 100vw;
+    height: 20px;
+    background-color: #777777;
+}
+/*底部栏end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
